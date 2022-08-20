@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* ? custom class */
+.bottom-border {
+    border-bottom: 1px solid #09365b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    background: #051e30;
+}
+
+::selection {
+    color: #000; 
+    background: #ffffff80;
+}
+
+::-moz-selection {
+    color: #000;
+    background: #ffffff80;
+}
+
+body h1,
+i {
+    color: #103f65;
+}
+
+/* ============================== */
+/* navbar */
+/* ============================== */
+.wrapper nav {
+    background: #051e30;
+    background: -moz-linear-gradient(90deg, #051e30 35%, #09365b 100%);
+    background: -webkit-linear-gradient(90deg, #051e30 35%, #09365b 100%);
+    background: linear-gradient(90deg, #051e30 35%, #09365b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#051e30", endColorstr="#09365b", GradientType=1);
+}
+
+.navbar .container-fluid .navbar-nav {
+    margin-left: auto;
+}
+
+.navbar .navbar-brand {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff;
+}
+
+.navbar .navbar-brand .fa-rebel {
+    background: #fff;
+    padding: 5px;
+    color: #000;
+    border-radius: 4px;
+}
+
+.navbar .navbar-collapse .navbar-nav li a {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #ffffffbe;
+    text-align: center;
+}
+
+.navbar .navbar-collapse .navbar-nav li a.active {
+    color: #fff;
+}
+
+.navbar .container-fluid .navbar-toggler {
+    outline: none;
+    border: none;
+}
+
+/* ============================== */
+/* navbar end */
+/* ============================== */
+
+/* ============================== */
+/* hero */
+/* ============================== */
+.wrapper .hero {
+    height: 75vh;
+}
+
+.wrapper .hero .hire-me button {
+    padding: 10px 20px;
+    background: #09365b;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* ============================== */
+/* hero end */
+/* ============================== */
+
+/* ============================== */
+/* who am i */
+/* ============================== */
+
+.wrapper .who-am-i {
+    height: 75vh;
+    background: #051e30;
+}
+
+
+.wrapper .who-am-i .skills .skill {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .who-am-i .skills .skill button {
+    padding: 10px 20px;
+    background: #09365b;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* ============================== */
+/* who am i end */
+/* ============================== */
+
+/* ============================== */
+/* projects */
+/* ============================== */
+.wrapper .projects {
+    height: 75vh;
+}
+
+.wrapper .projects .projects-images .project img {
+    width: 300px;
+    border-radius: 8px;
+    opacity: .5;
+    transition: opacity .2s ease-in-out;
+    cursor: pointer;
+}
+
+.wrapper .projects .projects-images .project img:hover {
+    opacity: 1;
+}
+
+/* ============================== */
+/* projects end*/
+/* ============================== */
+
+/* ============================== */
+/* footer */
+/* ============================== */
+.wrapper .footer {
+    height: 50vh;
+}
+
+.wrapper .footer .links .link {
+    cursor: pointer;
+}
+
+/* ============================== */
+/* footer end */
+/* ============================== */
+
+
+
+
+/* ============================== */
+/* TODO :: MEDIA QUERIES */
+/* ============================== */
+@media(max-width: 840px) {
+
+    .wrapper .hero,
+    .wrapper .who-am-i,
+    .wrapper .projects,
+    .wrapper .footer {
+        height: auto;
+    }
+
+    .wrapper .hero {
+        margin-top: 3.8rem;
+    }
+
+    .wrapper .who-am-i .skills {
+        flex-wrap: wrap;
+    }
+
+    .wrapper .who-am-i .skills .skill {
+        margin: .8rem 0;
+    }
+
+    .wrapper .who-am-i .skills .skill p {
+        display: none;
+    }
+}
+
+@media(max-width: 608px) {
+    .wrapper .projects .projects-images .project img {
+        width: 150px;
+    }
+
+    .wrapper .who-am-i .skills .skill button,
+    .wrapper .hero .hire-me button {
+        padding: 5px 10px;
+        background: #09365b;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 10px;
+    }
+
+}
